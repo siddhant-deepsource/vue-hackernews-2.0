@@ -1,0 +1,15 @@
+version = 1
+
+exclude_patterns = [
+    "build/**",
+    "public/**"
+]
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  plugins = ["vue"]
+  environment = ["nodejs"]
+  module_system = "es-modules"
